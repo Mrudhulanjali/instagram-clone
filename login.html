@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body {
+                background-color: #ececf3;
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .login-container {
+                background-color: #faf7f8;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                width: 350px;
+                text-align: left;
+            }
+
+            .login-title {
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .login-field {
+                margin-bottom: 12px;
+            }
+
+            .login-field strong {
+                display: block;
+                margin-bottom: 5px;
+                color: #333;
+            }
+
+            .login-input {
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                padding: 8px;
+                width: 100%;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            .login-radio-group {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            .login-radio {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 14px;
+            }
+
+            .login-button {
+                background-color: #4a90e2;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                width: 100%;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .login-button:hover {
+                background-color: #0061b0;
+            }
+
+            .login-text {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .login-text a {
+                color: #4a90e2;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .login-text a:hover {
+                text-decoration: underline;
+            }
+
+            .forgot-password {
+                text-align: right;
+                font-size: 13px;
+                margin-top: 5px;
+            }
+
+            .forgot-password a {
+                color: #4a90e2;
+                text-decoration: none;
+            }
+
+            .forgot-password a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+     
+
+
+
+        <form action="check.php" method="POST">
+        <div class="login-container">
+            <h1 class="login-title">Login</h1>
+
+            
+
+            <div class="login-field">
+                <strong>Email:</strong>
+                <input type="email" name="pemail" class="login-input"/>
+            </div>
+
+            <div class="login-field">
+                <strong>Password:</strong>
+                <input type="password" name="ppwd" class="login-input"/>
+                <div class="forgot-password">
+                    <a href="fpass.html">Forgot Password?</a>
+                </div>
+            </div>
+
+            
+
+            <div class="login-text">
+                Did not register? <a href="signup.html">Sign up here.</a>
+            </div>
+
+            <button type="submit" name='submit' class="login-button">Proceed</button>
+        </form>
+        </div>
+    </body>
+</html>
